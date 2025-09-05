@@ -273,3 +273,45 @@ print(f"student avarage score: {avg_score}")
 print(f"student current attendance: {student_attendancce}")
 print(f"student passed: {student_passed}")
 print(f"student awarded: {student_award}")
+
+# Conversion Types
+
+a = 3
+b = 4.5
+c = a + b
+print(c)
+print(type(c))
+
+# Type casting 
+
+x = 100
+y = x
+print(y)
+print(type(y))
+
+# it will not convert automatically so used to explicit/manually by using built in functions
+y = float(x)
+print(y)
+print(type(y))
+
+#data loss can occur 
+
+a = 5.9
+val = int(a)
+print(val)
+print(type(val))
+
+
+#strings
+
+val = "279"
+print(type(val))
+#print(val/10) #unsupported operand type(s) for /: 'str' and 'int'
+val_int = int(val)
+print(val_int/10)
+
+'''val = "seven"
+val_int = int(val) #invalid literal for int() with base 10: 'seven'''
+
+
+
