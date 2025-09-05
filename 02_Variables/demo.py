@@ -192,4 +192,46 @@ print(id(l2[0])) # idivualy it will print same address nut mutually it wiil not
 a = 10
 b = 7
 print(a & b)
-print(a | b)
+print(a | b) 
+
+# Data TYpes 
+
+brand = "Biba"
+product = "Women Blue & White Printed Kurta with Crop Palazzos"
+rating = 4.1
+price = 1150
+
+print(type(brand))
+print(type(product))
+print(type(rating))
+print(type(price))
+
+com_num = 2 + 3j
+print(type(com_num)) 
+
+list_nums = [10,20,30,40]
+print(type(list_nums))
+
+
+tuple_nums = (10,20,30,40)
+print(type(tuple_nums))
+
+
+set_nums = {10,20,30,40}
+print(type(set_nums))
+
+
+dic_data = {"name":"kaveri","age": 21}
+print(type(dic_data))
+
+x = None
+print(type(x))      
+# ALL these are predefind data types 
+
+# Created own datatypes are below
+
+class student:
+    pass 
+lync_student = student()
+print(type(lync_student))
+print(id(lync_student))
