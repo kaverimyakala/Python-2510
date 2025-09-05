@@ -235,3 +235,41 @@ class student:
 lync_student = student()
 print(type(lync_student))
 print(id(lync_student))
+
+
+# Student mangement system 
+
+student_id = 404
+student_name = "radha"
+student_age = 21
+
+#scores
+quiz_score = 70
+assignment_score = 85
+exam_score = 90
+
+#attendance
+student_attendancce = 90
+
+#calculations
+total_score = quiz_score + assignment_score + exam_score 
+avg_score = total_score/3
+
+student_passed = avg_score > 75
+
+#increment operation
+# student_attendancce = student_attendancce + 1 (option)
+student_attendancce += 1
+
+# award eligibilty
+student_award = student_attendancce >= 90 and student_passed
+
+# Process output 
+
+print("===== student report ======")
+print(f"student name: {student_name}")
+print(f"student total score: {total_score}")
+print(f"student avarage score: {avg_score}")
+print(f"student current attendance: {student_attendancce}")
+print(f"student passed: {student_passed}")
+print(f"student awarded: {student_award}")
