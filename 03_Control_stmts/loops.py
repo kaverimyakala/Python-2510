@@ -57,5 +57,77 @@ print(dir(text))
 for num in range(10):
     print("Hi")
 
+for num in range (1,6):
+    print(num)
 
+for num in range (1,6,1):
+    print(num)
+
+for num in range (2,6,2):
+    print(num)
+
+for num in range (2,10,2):
+    print(num)
+
+'''for num in range (2,5,8,2): # range expected at most 3 arguments, got 4 .so,it will not accept more then 3 arguments.
+    print(num)'''
+
+# reverse  
+
+for num in range (10,1,-1):   #so stop always excluded : start always included 
+    print(num)
+
+
+for num in range (10,1,-2):
+    print(num)
+
+# loop with conditions 
+print("printing even nums from 1 to 20 ")
+
+num = 2
+while num <= 20:
+    print(num)
+    num += 2 
+
+for num in range (2,21,2):
+    print(num)
+
+course_list = ["Python","cloud","devops","ai"]
+for course in course_list:
+    print(course)
+
+
+# Nested loop
+
+for i in range (1,4):
+    for j in range (1,4):
+        print(f"{i} x {j} = {i * j}")
+    print("-----") 
+
+i = 1
+while i < 4:
+    j = 1
+    while j < 4:
+        print(f"{i} x {j} = {i * j}")
+        j += 1
+    print("---")
+    i += 1  
+
+#Branching statements 
+# break exit the loop entirely
+
+for num in range(5):
+    if num == 3:
+        break  # so it stop the loop when it comes 3 
+    print(num)
+
+for num in range(5):
+    if num == 3:
+        continue # skip the current iteration 
+    print(num)
+
+for num in range(5):
+    if num == 3:
+        pass  
+    print(num) # does nothing 
 
