@@ -105,3 +105,71 @@ print(text[:]) #  nothing has given means it will print entire thing
 print(text[2:5]) # start at indext 2 and stop at 5 
 
 print(text[:4]) #start nothing as given so it will print till 4 th index from start point 
+
+#Back word 
+# Negative slicing (backword)
+
+text = "python"
+print((text[-1]))
+
+print(text[-1:])  # last index of text
+print(text[-4:-1]) #  its worng direction 
+print(text[-4:-1:1]) # its wrong direction 
+print(text[-4:-6:-1]) # starts at -4 so it will include till -5 excluded -6 stop point 
+print(text[1:4:-1])  # empty beacause direction was -1  but start point is 1 so its not possible dirction 
+print(text[::-1])  # it will print reverse string beacause -1 is back direction start point  and stop point nothing has given it will print entire string
+
+# without using  indexing  we can also use reverse string throuh loops 
+text = "python"
+reversed_text = ""
+for character in text:
+    reversed_text = character + reversed_text
+print("reversed text",reversed_text)
+
+#string immutability once a string is created,it cannot be changed 
+
+# reassigning
+text = "hello"
+print(text)
+text = "hi"
+print(text) 
+
+# string immutability
+#text = "hello"
+#print(text) 
+# modify hello to Hello
+#text[0] = "H"  #TypeError: 'str' object does not support item assignment
+
+s1 = "Hello"
+s2 = "Good Morning"
+print(s1+s2) 
+
+name = "kavya"
+age = 20
+print("my age is",age)
+print(f"My age is",{age})
+print("my age is",+age)
+print("my age is"+ str(age))
+
+#string formatting 
+#string repetition multiply the string using operator 
+
+text = "Ha"
+laugh = "hahahahahaha"
+print(laugh)
+laugh_hard = text*10
+print(laugh_hard)
+
+#string methods
+#string class providers multiple methods to work string related operations
+
+text = "ha"
+print(dir(text)) 
+
+#simulate gmail functionality using strings
+
+user_given_email = input("enter your mailID:")
+format_email = user_given_email.lower()+"@gmail.com"
+print("user given ID:",user_given_email)
+print("Gmail Autoformat ID:",format_email)
+
