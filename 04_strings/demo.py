@@ -173,3 +173,81 @@ format_email = user_given_email.lower()+"@gmail.com"
 print("user given ID:",user_given_email)
 print("Gmail Autoformat ID:",format_email)
 
+#simulating PAN functionality using condition
+
+user_given_pan = input("enter your input PAN ID:") 
+if user_given_pan.isalnum():
+    format_pan = user_given_pan.upper()
+    print("user given ID:",user_given_pan)
+    print("pan Autoformat ID:",format_pan)
+else:
+    print("user given PAN is invalid:"+user_given_pan)
+
+#Check for substring
+#simulate mail id verifying name@gmail.com 
+
+user_given_email = input("enter your mailID:")
+if user_given_email.find("@")!=-1:
+    print("valid email")
+else:
+    print("invalid email")
+
+#obave can be achieved using operator also
+user_given_email = input("enter your email ID:")
+if "@" in user_given_email:
+    print("valid email")
+else:
+    print("invalid")
+
+# redirect call based on given isd code
+phone_number = input("enter you phone number:")
+if phone_number.startswith("+91"):
+    print("call connected to INDIA")
+elif phone_number.startswith("+86"):
+    print("call connected to china")
+elif phone_number.startswith("+33"):
+    print("call connected to fRANCE")
+else:
+    print("isd available only to india,china,france")
+
+# check if email synchronisation is possible or not 
+
+user_given_email = input("enter your email id:")
+source_email = input("enter your destination email id to sync:")
+if source_email.endswith("gmail.com")and user_given_email.endswith("gmail.com"):
+    print("synchronizing")
+else:
+    print("Both email should be from same providers")
+
+#simulate gmail functionality remove space from input
+
+user_given_email = input("enter your mailID:")
+format_email = user_given_email.strip()
+print("user given ID:"+user_given_email)
+print("Gmail Autoformat ID:"+format_email)
+
+# read data from csv file
+# sample data taken from a csv file 
+
+#original data
+csv_line = "john,Hyd,20,john@gmail.com,developer"
+#original data
+print("original line:",csv_line)
+#parsed data
+parsed_field = csv_line.split(",")
+print("parsed data:",parsed_field)
+
+#Access name and role 
+print("Name:",parsed_field[0])
+print("Role:",parsed_field[4]) 
+
+# vs code find and replace /otp template /order/id template 
+
+email_template = "hello user, your order #{order_id} has been shipped"
+
+order_id = "OD-ID-9090"
+
+#replacing placeholder with values
+personalized_email = email_template.replace("{order_id}",order_id)
+
+print(personalized_email)
